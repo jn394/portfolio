@@ -9,153 +9,235 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">    
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Typed.js -->
+    <script src="assets/javascript/typed.js"></script>
     <!-- Javascript -->
     <script src="assets/javascript/script.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Inconsolata" rel="stylesheet">
+
     <title>Junwah Ng Portfolio</title>
 </head>
 
 <body>
-    <header class="masthead">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand">Junwah Ng (Jay)</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a id="nav-home" class="nav-item nav-link">Home</a>
-                    <a id="nav-portfolio" class="nav-item nav-link">Portfolio</a>
-                    <a id="nav-aboutme" class="nav-item nav-link">About Me</a>
-                    <a id="nav-contact" class="nav-item nav-link">Contact</a>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Navbar -->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand">
+                        <h3><strong>Junwah Ng (Jay)</strong></h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a id="aboutNav" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="portfolioNav" class="nav-link">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="contactNav" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
 
-
-        <div id="headerDiv" class="container mt-4 d-flex justify-content-center">
-            <div class="intro-text">
-                <img id="me" src="assets/images/me.jpg">
-                <div class="intro-lead-in d-flex justify-content-center">
-                    <h1>Jay Ng</h1>
-                </div>
-                <div class="intro-heading text-uppercase">
-                    <h5>Full-Stack Developer</h5>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a href="https://github.com/jn394" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="www.linkedin.com/in/junwah-ng-9691b736" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <!-- Jumbotron -->
+            <div class="jumbotron jumbotron-fluid shadow">
+                <div id="headerDiv" class="container">
+                    <img id="me" class="shadow" src="assets/images/me.jpg">
+                    <div class="display-4 mt-5">
+                        var JayNg = <a id="optionst" class="options"></a>
+                    </div>
+                    <div class="lead">
+                        Full-Stack Developer
+                    </div>
+                    <div class="mt-1">
+                        <a href="https://github.com/jn394" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/junwah-ng-9691b736/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <!-- Portfolio Grid -->
-    <section class="mt-3" id="portfolio">
-        <div class="container">
+
+        <!-- Portfolio Grid -->
+        <div id="portfolioDiv">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
+                <div class="col text-center">
+                    <h5 class="section-heading">Portfolio</h5>
                     <hr>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" href="https://jn394.github.io/myNYT-Search/" target="_blank">
-                        <img class="img-fluid" src="assets/images/NYT-Search.JPG" alt="NYT-Search">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4 class="d-flex justify-content-center">New York Times Article Search</h4>
-                        <p class="text-muted d-flex justify-content-center">NYT API</p>
+            <div class="container">
+
+                <div class="row mt-3 mx-4">
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="https://jn394.github.io/myNYT-Search/" target="_blank">
+                                <img class="card-img-top" src="assets/images/NYT-Search.JPG" alt="NYT-Search">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">New York Times Article Search</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">NYT API</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="https://jn394.github.io/Word-Guess-Game/" target="_blank">
+                                <img class="card-img-top" src="assets/images/word-guess.JPG" alt="Word-Guess">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">Who's That Pokemon</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Word Guessing Game</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="https://aschlegel09.github.io/Project-One/" target="_blank">
+                                <img class="card-img-top" src="assets/images/tripster.JPG" alt="Tripster">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">Tripster</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Airline/Hotel Booking Site</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" href="https://jn394.github.io/Word-Guess-Game/" target="_blank">
-                        <img class="img-fluid" src="assets/images/word-guess.JPG" alt="Word-Guess">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4 class="d-flex justify-content-center">Who's That Pokemon</h4>
-                        <p class="text-muted d-flex justify-content-center">Word Guessing Game</p>
+
+                <div class="row mt-3 mx-4">
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="#" target="_blank">
+                                <img class="card-img-top" src="http://stuffworthpaken.files.wordpress.com/2011/08/g.gif"
+                                    alt="##">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">Coming</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Soon</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" href="https://aschlegel09.github.io/Project-One/" target="_blank">
-                        <img class="img-fluid" src="assets/images/tripster.JPG" alt="Tripster">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4 class="d-flex justify-content-center">Tripster</h4>
-                        <p class="text-muted d-flex justify-content-center">Airline/Hotel Booking Site</p>
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="#" target="_blank">
+                                <img class="card-img-top" src="http://stuffworthpaken.files.wordpress.com/2011/08/g.gif"
+                                    alt="##">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">Coming</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow">
+                            <a class="portfolio-link" href="#" target="_blank">
+                                <img class="card-img-top" src="http://stuffworthpaken.files.wordpress.com/2011/08/g.gif"
+                                    alt="##">
+                                <div class="middle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </a>
+                            <div class="card-body p-2">
+                                <h5 class="d-flex justify-content-center m-1">Coming</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Soon</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
 
-    <!-- About -->
-    <section id="about">
-        <div class="container">
+        <!-- About -->
+        <div id="aboutDiv">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
+                <div class="col text-center">
+                    <h5 class="section-heading">About</h5>
                     <hr>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-muted">
-                        Hello World, my name is Junwah Ng or Jay for short. I'm a hardworking, organized,
-                        enthusiastic person that loves
-                        to watch movies. I wouldn't call myself a film buff, but I do spend way too much time on
-                        r/movies and watching
-                        video essays about how movies are made. Other than that I'm a typical joe that likes to
-                        code.
-                    </p>
-                    <p class="text-muted">
-                        I'm here learning in this bootcamp hoping to change careers. I was a structure engineer for
-                        about 4 years and wanted
-                        a change. So I decided to leave the company I was working at and started to learn coding.
-                        It was a tough desicion
-                        at first, but i think it was for the better. Now I'm free to purse my passion of coding.
-                    </p>
+                <div class="container">
+                    <div class="col">
+                        <img id="me2" class="shadow-lg" src="assets/images/me3.jpg">
+                        <p>
+                            Hello World, my name is Junwah Ng or Jay for short. I'm a hardworking, organized,
+                            enthusiastic person that loves
+                            to watch movies. I wouldn't call myself a film buff, but I do spend way too much time on
+                            r/movies and watching
+                            video essays about how movies are made. Other than that I'm a typical joe that likes to
+                            code.
+                        </p>
+                        <p class="text-oj">
+                            I'm here learning in this bootcamp hoping to change careers. I was a structure engineer for
+                            about 4 years and wanted
+                            a change. So I decided to leave the company I was working at and started to learn coding.
+                            It was a tough desicion
+                            at first, but i think it was for the better. Now I'm free to purse my passion of coding.
+                        </p>
+                        <p>
+                            Hopefully by the end of all this I will learn more and start a career in a field that I
+                            truely
+                            believe the skys the limit. See you in a few months...
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Me</h2>
-                    <hr>
+        <!-- Footer -->
+        <div class="row">
+            <footer class="footer py-4 mt-4">
+                <div class="container">
+                    <ul class="list-unstyled list-inline text-center m-0">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/jn394" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://https://www.linkedin.com/in/junwah-ng-9691b736//" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
-                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
-                        consectetur!</p>
-                </div>
-            </div>
+            </footer>
         </div>
-    </section>
-
-
+    </div>
 
 
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"

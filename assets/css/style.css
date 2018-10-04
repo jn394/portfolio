@@ -1,20 +1,82 @@
-/* .masthead {
-    background-image: url("http://melissavandyke.com/wp-content/uploads/2015/09/code.jpg");
-    height: 500px;
-} */
-
+/* NavBar */
 .navbar {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* End of Navbar */
+
+
+
+/* Navbar Underline */
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+    color: rgb(209, 150, 40);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    /* margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;*/
+    text-transform: uppercase; 
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
     color: white;
 }
 
-.nav-item {
-    color: white;
+.nav-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(209, 150, 40);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
 }
 
-.masthead {
-    background-image: url("../images/369881.jpg");
-    height: 450px;
-    /* background: linear-gradient(rgba(0,130,170,0),white), url("../images/369881.jpg"); */
+.nav-link:active::before {
+    background-color:  rgb(209, 150, 40);
+}
+
+.nav-link:hover::before, .nav-link:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+/* End of Navbar Underline */
+
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../images/15.jpg");
+    height: 500px;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    /* background-position: center; */
+}
+
+#optionst {
+    color: rgb(209, 150, 40);
 }
 
 #headerDiv {
@@ -23,8 +85,9 @@
 
 #me {
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+    float: right;
 }
 
 .fab {
@@ -32,8 +95,86 @@ font-size: 30px;
 color: white;
 margin-left: 12px;
 }
+/* End of Jumbotron */
 
-/* #about {
-    background: -webkit-linear-gradient(rgba(6, 121, 6, 0.897), white);
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#me2 {
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    float: left;
+    shape-outside: inset(1% round 50%);
+    margin: 20px;
+}
+
+.section-heading {
+    text-transform: uppercase; 
+}
+
+.text-oj {
+    color:  rgb(209, 150, 40);
+}
+
+.card {
+    border:none;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+
+/* Card Hover Effects */
+.card-img-top {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.portfolio-link:hover .card-img-top{
+    opacity: 0.3;
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio-link:hover .middle {
+    opacity: 1;
+}
+
+.fas {
+    background-color: rgb(209, 150, 40);
+    font-size: 25px;
     color: white;
-} */
+    border-radius: 100%;
+    padding: 10px;
+}
+/* End of Card Hover Effects */
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: rgb(197, 196, 196);
+
+}
+/* End of Footer */
