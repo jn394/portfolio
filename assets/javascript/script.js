@@ -5,11 +5,13 @@ $(document).ready(function () {
 
     $("#aboutNav").on("click", function () {
         $("#portfolioDiv").hide();
+        $("#carouselDiv").show();
         $("#aboutDiv:hidden").fadeIn(900);
     });
 
     $("#portfolioNav").on("click", function () {
         $("#aboutDiv").hide();
+        $("#carouselDiv").hide();
         $("#portfolioDiv:hidden").fadeIn(900);
     });
 

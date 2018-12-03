@@ -13,7 +13,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Typed.js -->
-    <script src="assets/javascript/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <!-- Javascript -->
     <script src="assets/javascript/script.js"></script>
     <!-- Font Awesome -->
@@ -21,7 +21,9 @@
         crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Inconsolata" rel="stylesheet">
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/skill_icons/j.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/images/skill_icons/j.jpg" type="image/x-icon">
     <title>Junwah Ng Portfolio</title>
 </head>
 
@@ -58,7 +60,7 @@
             <!-- Jumbotron -->
             <div class="jumbotron jumbotron-fluid shadow">
                 <div id="headerDiv" class="container">
-                    <img id="me" class="shadow" src="assets/images/me.jpg">
+                    <img id="me" class="shadow" src="assets/images/pictures_of_me/me.jpg">
                     <div class="display-4 mt-5">
                         var JayNg = <a id="optionst" class="options"></a>
                     </div>
@@ -67,7 +69,7 @@
                     </div>
                     <div class="mt-1">
                         <a href="https://github.com/jn394" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/junwah-ng-9691b736/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/jn394" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -88,7 +90,7 @@
                     <div class="col">
                         <div class="card shadow">
                             <a class="portfolio-link" href="https://jn394.github.io/myNYT-Search/" target="_blank">
-                                <img class="card-img-top" src="assets/images/NYT-Search.JPG" alt="NYT-Search">
+                                <img class="card-img-top" src="assets/images/projects/NYT-Search.JPG" alt="NYT-Search">
                                 <div class="middle">
                                     <i class="fas fa-search"></i>
                                 </div>
@@ -102,7 +104,7 @@
                     <div class="col">
                         <div class="card shadow">
                             <a class="portfolio-link" href="https://jn394.github.io/Word-Guess-Game/" target="_blank">
-                                <img class="card-img-top" src="assets/images/word-guess.JPG" alt="Word-Guess">
+                                <img class="card-img-top" src="assets/images/projects/word-guess.JPG" alt="Word-Guess">
                                 <div class="middle">
                                     <i class="fas fa-search"></i>
                                 </div>
@@ -116,7 +118,7 @@
                     <div class="col">
                         <div class="card shadow">
                             <a class="portfolio-link" href="https://aschlegel09.github.io/Project-One/" target="_blank">
-                                <img class="card-img-top" src="assets/images/tripster.JPG" alt="Tripster">
+                                <img class="card-img-top" src="assets/images/projects/tripster.JPG" alt="Tripster">
                                 <div class="middle">
                                     <i class="fas fa-search"></i>
                                 </div>
@@ -132,16 +134,16 @@
                 <div class="row mt-3 mx-4">
                     <div class="col">
                         <div class="card shadow">
-                            <a class="portfolio-link" href="#" target="_blank">
-                                <img class="card-img-top" src="http://stuffworthpaken.files.wordpress.com/2011/08/g.gif"
-                                    alt="##">
+                            <a class="portfolio-link" href="https://project2-shareflix.herokuapp.com/" target="_blank">
+                                <img class="card-img-top" src="assets/images/projects/ShareFlix.JPG" alt="##">
                                 <div class="middle">
                                     <i class="fas fa-search"></i>
                                 </div>
                             </a>
                             <div class="card-body p-2">
-                                <h5 class="d-flex justify-content-center m-1">Coming</h5>
-                                <p class="text-muted d-flex justify-content-center m-0">Soon</p>
+                                <h5 class="d-flex justify-content-center m-1">ShareFlix</h5>
+                                <p class="text-muted d-flex justify-content-center m-0">Content Service Sharing
+                                    Platform</p>
                             </div>
                         </div>
                     </div>
@@ -181,41 +183,137 @@
         </div>
 
         <!-- About -->
-        <div id="aboutDiv">
-            <div class="row">
-                <div class="col text-center">
-                    <h5 class="section-heading">About</h5>
-                    <hr>
-                </div>
-            </div>
+        <div id="carouselDiv" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselDiv" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselDiv" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h5 class="section-heading">About</h5>
+                            <hr>
+                        </div>
+                    </div>
 
-            <div class="row">
-                <div class="container">
-                    <div class="col">
-                        <img id="me2" class="shadow-lg" src="assets/images/me3.jpg">
-                        <p>
-                            Hello World, my name is Junwah Ng or Jay for short. I'm a hardworking, organized,
-                            enthusiastic person that loves
-                            to watch movies. I wouldn't call myself a film buff, but I do spend way too much time on
-                            r/movies and watching
-                            video essays about how movies are made. Other than that I'm a typical joe that likes to
-                            code.
-                        </p>
-                        <p class="text-oj">
-                            I'm here learning in this bootcamp hoping to change careers. I was a structure engineer for
-                            about 4 years and wanted
-                            a change. So I decided to leave the company I was working at and started to learn coding.
-                            It was a tough desicion
-                            at first, but I think it was for the better. Now I'm free to purse my passion of coding.
-                        </p>
-                        <p>
-                            Hopefully by the end of all this I will learn more and start a career in a field that I
-                            truly
-                            believe the sky's the limit. See you in a few months...
-                        </p>
+                    <div class="row">
+                        <div class="container">
+                            <div class="col">
+                                <img id="me3" class="shadow" src="assets/images/pictures_of_me/me3.jpg">
+                                <p>
+                                    Hello World, my name is Junwah Ng or Jay for short. I'm a hardworking, organized,
+                                    enthusiastic person that loves
+                                    to watch movies. I wouldn't call myself a film buff, but I do spend way too much
+                                    time on
+                                    r/movies and watching
+                                    video essays about how movies are made. Other than that I'm a typical joe that
+                                    likes to
+                                    code.
+                                </p>
+                                <p class="text-oj">
+                                    I'm here learning in this bootcamp hoping to change careers. I was a structure
+                                    engineer for
+                                    about 4 years and wanted
+                                    a change. So I decided to leave the company I was working at and started to learn
+                                    coding.
+                                    It was a tough desicion
+                                    at first, but I think it was for the better. Now I'm free to purse my passion of
+                                    coding.
+                                </p>
+                                <p>
+                                    Hopefully by the end of all this I will learn more and start a career in a field
+                                    that I
+                                    truly
+                                    believe the sky's the limit. See you in a few months...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h5 class="section-heading">Technical Skills</h5>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container">
+                            <div class="col">
+                                <div class="d-flex justify-content-center">
+                                    <p>These are technical skills that I have for now. I'm learning more and would love to expand my skill set as I become a
+                                        better developer.</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <h5>Software/Frameworks</h5>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/javascript.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">Javascript</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/nodejs.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">Node.js</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/mysql.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">MySQL</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons express" src="assets/images/skill_icons/expressjs.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">Express.js</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/sequelizejs.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">Sequelize.js</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/Python.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">Python</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/html.png">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">HTML</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card skillCards text-center">
+                                        <img class="skillIcons" src="assets/images/skill_icons/css.jpg">
+                                        <div class="card-body skillBody">
+                                            <h5 class="card-title">CSS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselDiv" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselDiv" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
         <!-- Footer -->
@@ -227,7 +325,7 @@
                             <a href="https://github.com/jn394" target="_blank"><i class="fab fa-github"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://https://www.linkedin.com/in/junwah-ng-9691b736//" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/jn394" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
