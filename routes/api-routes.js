@@ -3,9 +3,9 @@ require("dotenv").config();
 const keys = require('../keys.js');
 const sgMail = require('@sendgrid/mail');
 
-module.exports = function (app) {
+module.exports = app => {
 
-  app.post("/email", function (req, res) {
+  app.post("/email", (req, res) => {
 
     sgMail.setApiKey(keys.sendgrid.id);
     const msg = {

@@ -1,11 +1,11 @@
 // Requiring necessary npm packages
-var express = require("express");
+const express = require("express");
 
 // Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // Creating express app and configuring middleware needed for authentication
-var app = express();
+const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
@@ -14,6 +14,6 @@ app.use(express.static("public"));
 require("./routes/api-routes.js")(app);
 
 // Start the server
-app.listen(PORT, function () {
+app.listen(PORT, () => {
     console.log("App running on port " + PORT + "!");
 });

@@ -171,6 +171,15 @@ body {
     padding: 5px 0 0 5px;
 }
 
+.smallerHR {
+    margin: 6px 5px 5px 5px;
+} 
+
+.usedwith{
+    font-size: 15px;
+    font-style: italic;
+}
+
 .card-img-top {
     opacity: 1;
     display: block;
@@ -210,6 +219,7 @@ body {
 }
 /* End of Card Hover Effects */
 
+
 /* Contact Me */
 #submitEmail {
     background-color: rgb(209, 150, 40);
@@ -220,6 +230,7 @@ body {
     box-shadow: 0 0 5px rgb(209, 150, 40);
     border: 1px solid rgb(209, 150, 40);
 }
+/* End of Contact Me */
 
 
 /* Footer */
@@ -229,3 +240,23 @@ body {
 
 }
 /* End of Footer */
+
+.tooltip-inner {
+ 
+    max-width:310px;
+     
+    padding:3px 8px;
+     
+    color:#fff;
+     
+    text-align:center;
+     
+    background-color:rgb(209, 150, 40);
+     
+    -webkit-border-radius:4px;
+     
+    -moz-border-radius:4px;
+     
+    border-radius:4px
+     
+}
