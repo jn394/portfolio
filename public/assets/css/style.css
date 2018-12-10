@@ -210,6 +210,16 @@ body {
 }
 /* End of Card Hover Effects */
 
+/* Contact Me */
+#submitEmail {
+    background-color: rgb(209, 150, 40);
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgb(209, 150, 40);
+    border: 1px solid rgb(209, 150, 40);
+}
 
 
 /* Footer */
